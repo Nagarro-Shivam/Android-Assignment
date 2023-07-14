@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditText
+        android:id="@+id/et_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/et_name"
+        android:layout_width="200dp"
+        android:hint="Enter Email"
+        android:gravity="center"
+        android:textColorHint="@color/black"
+        android:layout_marginVertical="16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+        android:hint="Enter Name"
+        app:layout_constraintEnd_toEndOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        android:gravity="center"
+        android:layout_marginVertical="16dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/et_pass"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="0dp"
+        android:hint="Enter Password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+        app:layout_constraintEnd_toEndOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        android:layout_marginVertical="16dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_pass"
+        android:layout_marginTop="12dp"
+        android:text="Next"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
